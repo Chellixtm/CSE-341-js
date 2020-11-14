@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+  <div class="card card-styles">
+    <div class="card-header">
+      <h2>Your Postal Rate</h2>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Shipping Type: <%= shippingType %></p>
+      <p class="card-text">Item Weight: <%= weight %></p>
+      <p class="card-text">Shipping Cost: $ <%= rate %></p>
+    </div>
+  </div>
+
+  <% include ../partials/footer.ejs %>
+
+</body>
+
+</html>
